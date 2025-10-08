@@ -9,8 +9,9 @@ public class Developer {
     // This class is not meant to be instantiated
     // so we make the constructor private
 
-    private Developer() {}
-    
+    private Developer() {
+    }
+
     /**
      * Get the name of the developer
      */
@@ -20,24 +21,26 @@ public class Developer {
         // You may use just the name that is used on <https://bit.ly/cs156-f25-teams>
         // i.e. your first name, or your first and initial of last name
 
-        return "Chris G.";
+        return "Joshua C.";
     }
 
     /**
      * Get the github id of the developer
+     * 
      * @return github id of the developer
      */
 
     public static String getGithubId() {
         // TODO: Change this to your github id
-        return "cgaucho";
+        return "JoshuaChu2004";
     }
 
     /**
      * Get the developers team
+     * 
      * @return developers team as a Java object
      */
-    
+
     public static Team getTeam() {
         // TODO: Change this to your team name
         Team team = new Team("f25-xx");
