@@ -3,6 +3,7 @@ package edu.ucsb.cs156.spring.hello;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.beans.Transient;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 
@@ -24,6 +25,11 @@ public class DeveloperTest {
     @Test
     public void getName_returns_correct_name() {
         assertEquals("Joshua C.", Developer.getName());
+    }
+
+    @Test
+    public void getGithubId_returns_correct_githubId() {
+        assertEquals("JoshuaChu2004", Developer.getGithubId());
     }
 
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
